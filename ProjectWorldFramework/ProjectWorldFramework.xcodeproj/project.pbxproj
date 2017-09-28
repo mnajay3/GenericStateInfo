@@ -10,6 +10,13 @@
 		B202DEAF1F7C9BCA00DBD837 /* ProjectWorldFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B202DEA51F7C9BCA00DBD837 /* ProjectWorldFramework.framework */; };
 		B202DEB41F7C9BCA00DBD837 /* ProjectWorldFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DEB31F7C9BCA00DBD837 /* ProjectWorldFrameworkTests.swift */; };
 		B202DEB61F7C9BCA00DBD837 /* ProjectWorldFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B202DEA81F7C9BCA00DBD837 /* ProjectWorldFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B202DED91F7CA8F600DBD837 /* MasterListConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DED61F7CA8F600DBD837 /* MasterListConstants.swift */; };
+		B202DEDA1F7CA8F600DBD837 /* MasterPListUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DED71F7CA8F600DBD837 /* MasterPListUtil.swift */; };
+		B202DEDB1F7CA8F600DBD837 /* MasterPropertyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DED81F7CA8F600DBD837 /* MasterPropertyManager.swift */; };
+		B202DEDD1F7CA96900DBD837 /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DEDC1F7CA96900DBD837 /* MasterTableViewCell.swift */; };
+		B202DEDF1F7CA97700DBD837 /* MasterTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DEDE1F7CA97700DBD837 /* MasterTableView.swift */; };
+		B202DEE11F7CA98700DBD837 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DEE01F7CA98700DBD837 /* MasterViewController.swift */; };
+		B202DEE31F7CA99C00DBD837 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DEE21F7CA99C00DBD837 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		B202DEAE1F7C9BCA00DBD837 /* ProjectWorldFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectWorldFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B202DEB31F7C9BCA00DBD837 /* ProjectWorldFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectWorldFrameworkTests.swift; sourceTree = "<group>"; };
 		B202DEB51F7C9BCA00DBD837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B202DED61F7CA8F600DBD837 /* MasterListConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterListConstants.swift; path = util/MasterListConstants.swift; sourceTree = "<group>"; };
+		B202DED71F7CA8F600DBD837 /* MasterPListUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterPListUtil.swift; path = util/MasterPListUtil.swift; sourceTree = "<group>"; };
+		B202DED81F7CA8F600DBD837 /* MasterPropertyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterPropertyManager.swift; path = util/MasterPropertyManager.swift; sourceTree = "<group>"; };
+		B202DEDC1F7CA96900DBD837 /* MasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterTableViewCell.swift; path = collectionViewCell/MasterTableViewCell.swift; sourceTree = "<group>"; };
+		B202DEDE1F7CA97700DBD837 /* MasterTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterTableView.swift; path = collectionView/MasterTableView.swift; sourceTree = "<group>"; };
+		B202DEE01F7CA98700DBD837 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = main/MasterViewController.swift; sourceTree = "<group>"; };
+		B202DEE21F7CA99C00DBD837 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = extension/StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,7 @@
 		B202DEA71F7C9BCA00DBD837 /* ProjectWorldFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B202DEBF1F7C9CD100DBD837 /* source */,
 				B202DEA81F7C9BCA00DBD837 /* ProjectWorldFramework.h */,
 				B202DEA91F7C9BCA00DBD837 /* Info.plist */,
 			);
@@ -84,6 +99,84 @@
 				B202DEB51F7C9BCA00DBD837 /* Info.plist */,
 			);
 			path = ProjectWorldFrameworkTests;
+			sourceTree = "<group>";
+		};
+		B202DEBF1F7C9CD100DBD837 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				B202DEC01F7C9CE100DBD837 /* com */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		B202DEC01F7C9CE100DBD837 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				B202DEC11F7C9CE800DBD837 /* projectworld */,
+			);
+			name = com;
+			sourceTree = "<group>";
+		};
+		B202DEC11F7C9CE800DBD837 /* projectworld */ = {
+			isa = PBXGroup;
+			children = (
+				B202DEC71F7C9D9000DBD837 /* util */,
+				B202DEC61F7C9D3F00DBD837 /* collectionViewCell */,
+				B202DEC51F7C9D2900DBD837 /* collectionView */,
+				B202DEC41F7C9D1A00DBD837 /* taskmgmt */,
+				B202DEC31F7C9D0E00DBD837 /* main */,
+				B202DEC21F7C9CFD00DBD837 /* extension */,
+			);
+			name = projectworld;
+			sourceTree = "<group>";
+		};
+		B202DEC21F7C9CFD00DBD837 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				B202DEE21F7CA99C00DBD837 /* StringExtensions.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
+		B202DEC31F7C9D0E00DBD837 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				B202DEE01F7CA98700DBD837 /* MasterViewController.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		B202DEC41F7C9D1A00DBD837 /* taskmgmt */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = taskmgmt;
+			sourceTree = "<group>";
+		};
+		B202DEC51F7C9D2900DBD837 /* collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				B202DEDE1F7CA97700DBD837 /* MasterTableView.swift */,
+			);
+			name = collectionView;
+			sourceTree = "<group>";
+		};
+		B202DEC61F7C9D3F00DBD837 /* collectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B202DEDC1F7CA96900DBD837 /* MasterTableViewCell.swift */,
+			);
+			name = collectionViewCell;
+			sourceTree = "<group>";
+		};
+		B202DEC71F7C9D9000DBD837 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B202DED61F7CA8F600DBD837 /* MasterListConstants.swift */,
+				B202DED71F7CA8F600DBD837 /* MasterPListUtil.swift */,
+				B202DED81F7CA8F600DBD837 /* MasterPropertyManager.swift */,
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +241,7 @@
 				TargetAttributes = {
 					B202DEA41F7C9BCA00DBD837 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					B202DEAD1F7C9BCA00DBD837 = {
@@ -196,6 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B202DEE31F7CA99C00DBD837 /* StringExtensions.swift in Sources */,
+				B202DEE11F7CA98700DBD837 /* MasterViewController.swift in Sources */,
+				B202DEDA1F7CA8F600DBD837 /* MasterPListUtil.swift in Sources */,
+				B202DED91F7CA8F600DBD837 /* MasterListConstants.swift in Sources */,
+				B202DEDD1F7CA96900DBD837 /* MasterTableViewCell.swift in Sources */,
+				B202DEDB1F7CA8F600DBD837 /* MasterPropertyManager.swift in Sources */,
+				B202DEDF1F7CA97700DBD837 /* MasterTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +423,7 @@
 		B202DEBA1F7C9BCA00DBD837 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = projectWorld.ProjectWorldFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +443,7 @@
 		B202DEBB1F7C9BCA00DBD837 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +462,7 @@
 		B202DEBD1F7C9BCA00DBD837 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ProjectWorldFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = projectWorld.ProjectWorldFrameworkTests;
@@ -369,6 +474,7 @@
 		B202DEBE1F7C9BCA00DBD837 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ProjectWorldFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = projectWorld.ProjectWorldFrameworkTests;
