@@ -159,6 +159,7 @@
                                             <outlet property="areaLabel" destination="Dvz-L8-L9f" id="5uj-8I-qFl"/>
                                             <outlet property="capital" destination="Ivm-zw-vMt" id="8TB-S7-Sq0"/>
                                             <outlet property="capitalLabel" destination="MRt-ls-cgU" id="QBC-lx-fZY"/>
+                                            <outlet property="capitallargeCitiStackView" destination="eUn-rc-oG6" id="L5J-en-M9V"/>
                                             <outlet property="country" destination="EAJ-ef-AvC" id="u5j-UF-bwZ"/>
                                             <outlet property="countryLabel" destination="G8v-pm-7iO" id="h8Q-TT-I5T"/>
                                             <outlet property="largeCity" destination="qK8-0J-t78" id="PK0-xc-Gid"/>

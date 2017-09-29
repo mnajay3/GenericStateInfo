@@ -20,6 +20,7 @@ class StateInfoTableViewCell : MasterTableViewCell {
     @IBOutlet weak var areaLabel: UILabel!
     @IBOutlet weak var area: UILabel!
     
+    @IBOutlet weak var capitallargeCitiStackView: UIStackView!
     @IBOutlet weak var capitalLabel: UILabel!
     @IBOutlet weak var capital: UILabel!
     
@@ -44,9 +45,11 @@ class StateInfoTableViewCell : MasterTableViewCell {
             self.capital.text      = item.capital
             self.capitalLabel.isHidden = false
             self.capital.isHidden = false
+            self.capitallargeCitiStackView.isHidden = false
         }else {
             self.capitalLabel.isHidden = true
             self.capital.isHidden = true
+            self.capitallargeCitiStackView.isHidden = true
         }
 
         
@@ -55,9 +58,11 @@ class StateInfoTableViewCell : MasterTableViewCell {
             self.largeCity.text      = item.largest_city
             self.largecityLabel.isHidden = false
             self.largeCity.isHidden = false
+            self.capitallargeCitiStackView.isHidden = false
         }else {
             self.largecityLabel.isHidden = true
             self.largeCity.isHidden = true
+            self.capitallargeCitiStackView.isHidden = true
         }
         return cell
     }
