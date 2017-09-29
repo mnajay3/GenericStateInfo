@@ -5,7 +5,11 @@
 //  Created by Naga Murala on 9/27/17.
 //  Copyright © 2017 Naga Murala. All rights reserved.
 //
-
+//This project mainly used three types of design patterns
+//1. MVVM design pattern.. Here StateViewController is view(View+Controller), Model(GenericStateResponse, MessageResponse, StateResult) and the ViewModel: StateInfoInvoker (i.e. NetworkController)
+//2. Singlton designpattern: All models, Service invoker uses Singlton pattern to avoid multiple objects to invoke service
+//3. Delegation pattern: Very powerful mechanism used between controller, tableview and tableview cell as a communication
+//
 import UIKit
 import ProjectWorldFramework
 
