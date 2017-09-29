@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class MasterViewController: UIViewController {
+open class MasterViewController: UIViewController {
     //MARK: Property declaration
     open var _config: [String: Any]?
     open var _nextViewName: String?

@@ -74,6 +74,9 @@ open class MasterTableView: UITableView, UITableViewDelegate, UITableViewDataSou
         //Make sure to initialize cellCreator from child class, before createcell is getting invoked
         return self.cellFactory.createCell(item: item, indexPath:indexPath)
     }
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let item = (self.list[indexPath.section]?[indexPath.row]) else { return }
         guard let identifier = cellForRow(at: indexPath)?.description else { return }

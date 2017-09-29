@@ -17,6 +17,7 @@
 		B202DEDF1F7CA97700DBD837 /* MasterTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DEDE1F7CA97700DBD837 /* MasterTableView.swift */; };
 		B202DEE11F7CA98700DBD837 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DEE01F7CA98700DBD837 /* MasterViewController.swift */; };
 		B202DEE31F7CA99C00DBD837 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DEE21F7CA99C00DBD837 /* StringExtensions.swift */; };
+		B202DF311F7CB74B00DBD837 /* MasterTaskManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202DF301F7CB74B00DBD837 /* MasterTaskManagement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B202DEDE1F7CA97700DBD837 /* MasterTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterTableView.swift; path = collectionView/MasterTableView.swift; sourceTree = "<group>"; };
 		B202DEE01F7CA98700DBD837 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = main/MasterViewController.swift; sourceTree = "<group>"; };
 		B202DEE21F7CA99C00DBD837 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = extension/StringExtensions.swift; sourceTree = "<group>"; };
+		B202DF301F7CB74B00DBD837 /* MasterTaskManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MasterTaskManagement.swift; path = taskmgmt/MasterTaskManagement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		B202DEC41F7C9D1A00DBD837 /* taskmgmt */ = {
 			isa = PBXGroup;
 			children = (
+				B202DF301F7CB74B00DBD837 /* MasterTaskManagement.swift */,
 			);
 			name = taskmgmt;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B202DEE31F7CA99C00DBD837 /* StringExtensions.swift in Sources */,
+				B202DF311F7CB74B00DBD837 /* MasterTaskManagement.swift in Sources */,
 				B202DEE11F7CA98700DBD837 /* MasterViewController.swift in Sources */,
 				B202DEDA1F7CA8F600DBD837 /* MasterPListUtil.swift in Sources */,
 				B202DED91F7CA8F600DBD837 /* MasterListConstants.swift in Sources */,
@@ -502,6 +506,7 @@
 				B202DEBB1F7C9BCA00DBD837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B202DEBC1F7C9BCA00DBD837 /* Build configuration list for PBXNativeTarget "ProjectWorldFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +515,7 @@
 				B202DEBE1F7C9BCA00DBD837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
